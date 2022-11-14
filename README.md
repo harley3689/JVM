@@ -1,5 +1,5 @@
-##
-    public class JVM {  //ClassLoader загружает класс JVM в MetaSpace.
+```javascript 
+    public class JVM {  ClassLoader загружает класс JVM в MetaSpace.
 
     public static void main(String[] args) {        1. Создается frame/область памяти в стеке-памяти для метода main. Для каждого метода создается frame/область памяти.
         int i = 1;                                  2. Стек-памяти хранит в себе примитивы(int i=1) и ссылки на объекты в heap/куче, на которые ссылается метод.
@@ -14,3 +14,4 @@
         System.out.println(o.toString() + i + ii);  8. Функция System.out так же хранится в куче/heap, а в стеке-памяти создается новый frame/область памяти, где хранятся ссылки на значения(o.toString, i, ii).
     }                                               9. Методы main и printAll полностью выполняются и место в стек-памяти/Stack Memory занятое фреймами освобождается.
 }
+```
